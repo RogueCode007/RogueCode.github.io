@@ -1,0 +1,402 @@
+ body {
+   margin: 0;
+   padding: 0;
+   background: #eaf6fc;
+   font-family: 'Raleway', sans-serif;
+ }
+
+ nav {
+  background: #eaf6fc;
+}
+
+nav div {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+
+}
+
+nav ul {
+  list-style-type: none;
+  margin-top: 1rem;
+}
+
+nav ul li {
+  display: inline;
+  padding: 20px;
+}
+
+#toggle-btn {
+  border: none;
+  background: #eaf6fc;
+  display: none;
+  font-size: 40px;
+  outline: none;
+  color: #003459;
+}
+
+#bars {
+  display: none;
+}
+
+#close {
+  display: none;
+}
+
+ #container {
+   display: grid;
+   grid-template-columns: (12, 1fr);
+   grid-template-rows: 350px 320px 530px 200px 200px 70px;
+   grid-template-areas:
+     "m m m m m m m m m m m m"
+     "c c c c c c c c c c c c"
+     "s s s s s s s s s s s s"
+     "j j j j j j j j j j j j"
+     "f f f f f f f f f f f f"
+     "e e e e e e e e e e e e";
+ }
+
+ #main {
+   grid-area: m;
+   height: 100%;
+   background: #eaf6fc;
+   color: #003459;
+ }
+
+ h1 {
+   width: 70%;
+   margin: 90px 50px;
+   font-size: 45px;
+ }
+
+ #challenge-box {
+   grid-area: c;
+   background: white;
+   color: #003459;
+   height: 100%;
+   text-align: center;
+   padding-top: 50px;
+ }
+
+ #challenge-box p {
+   width: 80%;
+   margin: 10px auto;
+   font-size: 1.4em;
+ }
+
+ #sustain-box {
+   grid-area: s;
+   background: white;
+   color: #003459;
+   height: 100%;
+ }
+
+ #wrapper {
+   width: 90%;
+   margin: 0 auto;
+   display: flex;
+
+ }
+
+ #sustain-text {
+   font-size: 1.4em;
+   width: 55%;
+   margin: 5%;
+   padding-right: 10px;
+ }
+
+ #phone-image {
+   width: 35%;
+   margin: 5%;
+   padding-left: 50px
+ }
+
+ #phone-image img {
+   padding-left: 10px;
+ }
+
+ #join-us {
+   grid-area: j;
+   background: white;
+   color: #003459;
+   text-align: center;
+   height: 100%;
+ }
+
+ #join-us div {
+   width: 90%;
+   margin: 0 auto;
+ }
+
+ #join-us p {
+   font-size: 1.4em
+ }
+
+ footer {
+   grid-area: f;
+   background-color: #003459;
+   color: white;
+   height: 100%;
+ }
+
+ #footer {
+   width: 90%;
+   margin: 0px 20px 0px auto;
+   height: 100%;
+
+ }
+
+ .footer-content {
+   float: left;
+
+ }
+
+ #footer ul {
+   width: 20%;
+   margin-top: 20px;
+   list-style-type: none;
+ }
+
+ footer ul li {
+   font-size: 13px;
+   padding: 5px;
+ }
+
+ #footer ul li a {
+   font-weight: normal;
+   color: white;
+ }
+
+ .highlight {
+   font-size: 17px;
+   text-transform: uppercase;
+   font-weight: 700;
+ }
+
+ #form {
+   width: 50%;
+   padding: 20px;
+
+ }
+
+ #form input {
+   width: 60%
+ }
+
+ #form button {
+   box-sizing: border-box;
+   margin: 0 0 5px 10px
+ }
+ #social-md{
+  width: 50%;
+  margin-left: 10%;
+  text-align: left;
+  padding: 10px;
+}
+#social-md a{
+  color: white;
+}
+#social-md a i{
+  font-size: 25px;
+}
+
+ #extra {
+   grid-area: e;
+   height: 100%;
+   width: 100%;
+   background: #003459;
+   color: white;
+   margin-top: 0;
+ }
+
+ #extra p {
+   text-align: center;
+   margin-top: 10px;
+   font-size: 13px;
+ }
+
+ hr {
+   margin: 0 auto;
+   width: 90%;
+   border-style: solid;
+   border-color: white;
+
+ }
+/*=============== FIRST MEDIA QUERY =========================*/
+ @media screen and (max-width: 990px) {
+   #sustain-text p {
+     font-size: 20px
+   }
+ }
+
+ @media screen and (max-width: 850px) {
+   #container {
+     grid-template-rows: 277px 295px 690px 190px 400px 50px;
+     height: inherit;
+   }
+
+   nav ul {
+    display: none;
+  }
+
+  #toggle-btn {
+    display: block;
+  }
+
+  #bars {
+    display: block;
+    font-size: 0.5em;
+  }
+  #close{
+    font-size: 1.5em;
+  }
+
+   #main {
+     grid-area: m;
+     height: 100%;
+     width: 100%;
+   }
+
+   h1 {
+     width: 80%;
+     margin: 50px auto;
+     font-size: 2.5em;
+     line-height: 1.5em
+   }
+
+   #challenge-box {
+     grid-area: c;
+     height: 100%;
+     padding-top: 20px;
+   }
+   #challenge-text{
+     padding-top: 60px;
+   }
+   #challenge-box p {
+     line-height: 2em;
+     font-size: 1em
+   }
+
+   #challenge-text {
+     width: 100%;
+     margin: 0px 0px;
+
+   }
+
+   #wrapper {
+     display: block;
+     margin: 0px auto;
+     /*border: 1px solid green;*/
+   }
+
+   #sustain-box {
+     height: 100%;
+     grid-area: s;
+   }
+
+   #sustain-text {
+     width: 90%;
+     margin: 5%;
+     padding: 0;
+   }
+
+
+   #sustain-text p {
+     line-height: 2em;
+     font-size: 0.73em;
+     padding-left: 10px;
+     text-align: center;
+   }
+
+   h2 {
+     text-align: center;
+   }
+
+   #learn-btn {
+     display: flex;
+     justify-content: center;
+     margin: 30px auto;
+   }
+
+
+   #phone-image {
+     width: 90%;
+     height: 280px;
+     margin: 5%;
+     display: flex;
+     justify-content: center;
+     padding: 0;
+   }
+
+   #join-us {
+     grid-area: j;
+     height: 100%;
+   }
+
+   #join-us div {
+     width: 100%;
+     margin: 0 auto;
+   }
+
+   #join-us div p {
+     font-size: 1em
+   }
+
+   footer {
+     grid-area: f;
+
+     height: 100%
+   }
+
+   #footer .footer-list {
+     display: flex;
+
+   }
+
+   #footer div ul {
+     width: 80%;
+     margin: 5%;
+   }
+
+   #form {
+     width: 100%;
+     display: block;
+     margin: 5px auto;
+     padding: 20px 0px 20px 100px;
+   }
+
+   #form div input {
+     height: 2em;
+     width: 10em;
+     margin-right: 0
+   }
+
+   #extra {
+     grid-area: e;
+     height: 100%;
+   }
+
+   
+
+ }
+ @media screen and (max-width: 420px){
+  h1{
+    font-size: 1.5em;
+  }
+  #challenge-text{
+    padding-top: 5px;
+  }
+  #challenge-text p{ 
+    line-height: 1.6em
+  }
+  #sustain-text p{
+    line-height: 1.6em;
+  }
+  #join-us div p{
+    line-height: 1.6em
+  }
+  #form{
+    padding: 20px 10px 20px 70px;
+  }
+ }
