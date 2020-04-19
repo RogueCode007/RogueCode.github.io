@@ -382,16 +382,16 @@ nav ul li {
  }
  @media screen and (max-width: 420px){
   h1{
-    font-size: 1.5em;
+    font-size: 1.6em;
   }
   #challenge-text{
     padding-top: 5px;
   }
   #challenge-text p{ 
-    line-height: 1.6em
+    line-height: 1.5em
   }
   #sustain-text p{
-    line-height: 1.6em;
+    line-height: 1.5em;
   }
   #join-us div p{
     line-height: 1.6em
