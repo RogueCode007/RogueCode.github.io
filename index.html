@@ -4,18 +4,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>home page</title>
+  <title>Document</title>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/v4-shims.css">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="home.css">
 </head>
 
 <body>
   <nav>
     <div>
-      <a href="#"><img src="logo3 1.png" alt="lifebox log" id="logo"></a>
+      <a href="index.html"><img src="/images/logo3 1.png" alt="lifebox log" id="logo"></a>
       <span><i class="fa fa-times" id="close"></i></span>
       <button id="toggle-btn">
         <span>
@@ -32,90 +32,82 @@
     </div>
   </nav>
   <div id="container">
-
-    <div id="main">
-      <h1>
-        We are developing digital
-        solutions to help people
-        beat chronic disease
-      </h1>
-    </div>
-    <div id="challenge-box">
-      <div id="challenge-text">
-        <h2>The challenge</h2>
-        <p>1 in 3 people in Nigeria have a chronic disease or is at risk of one. In Africa, more than 200 million people
-          are
-          affected. LifeBox is
-          developing clinically validated digital programs using mobile technology, evidence-based medicine and
-          behavioral
-          science to
-          help people prevent and manage chronic disease</p>
+    <div id="box-1">
+      <div>
+        <h1>
+          We’re developing digital solutions to help people beat chronic disease
+        </h1>
       </div>
     </div>
-    <div id="sustain-box">
-      <div id="wrapper">
+    <div id="box-2">
+      <div id="challenge-box">
+        <h4>The Challenge</h4>
+        <p>1 in 3 people in Nigeria have a chronic disease or is at risk of one. In Africa, more than 200 million people
+          are affected. LifeBox is developing clinically validated digital programs using mobile technology,
+          evidence-based medicine and behavioral science to help people prevent and manage chronic disease
+        </p>
+      </div>
+      <div id="sustain-box">
         <div id="sustain-text">
-          <h2>Introducing Sustain</h2>
+          <h4>Introducing Sustain</h4>
           <p>Sustain, by LifeBox, is a scalable, digital health solution
             for prevention and management of type 2 diabetes, and
             hypertension. The program helps people change the
             habits that put them at risk and provides the education,
             resources, and support they need to change their habits
-            and achieve their health goals </p>
-          <div id="learn-btn">
-            <button class="btn btn-primary btn-md">Learn More</button>
-          </div>
+            and achieve their health goals
+          </p>
+          <button class="btn btn-primary btn-sm">Learn More</button>
         </div>
-        <div id="phone-image">
-          <img src="Pixel 4 XL.png" alt="phone-graphics">
+        <div id="phone-img">
+          <img src="/images/Pixel 4 XL.png" alt="">
         </div>
       </div>
-    </div>
-    <div id="join-us">
-      <div>
-        <h3>Join Us</h3>
+      <div id="join-box">
+        <h4>Join us</h4>
         <p>We’re always looking for the brightest minds who share our vision of transforming healthcare in Nigeria</p>
-        <button class="btn btn-primary btn-md">View Careers</button>
+        <button class="btn btn-primary btn-sm">View Careers</button>
       </div>
     </div>
-    <footer>
-      <div id="footer">
-        <div class="footer-list">
-          <ul class="footer-content">
-            <li class="highlight"><a href="#">Company</a></li>
+    <div id="box-3">
+      <footer>
+        <div id="first-list" class="footer-content">
+          <ul>
+            <li class="highlight">Company</li>
             <li><a href="about.html">About Us</a></li>
-            <li><a href="#">Careers</a></li>
+            <li><a href="careers.html">Careers</a></li>
             <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="#">Blog</a></li>
-          </ul>
-          <ul class="footer-content">
-            <li class="highlight"><a href="#">Program</a></li>
-            <li><a href="#">Sustain</a></li>
+            <li><a href="blog.lifebox.ng">Blog</a></li>
           </ul>
         </div>
-        <div id="form" class="footer-content">
+        <div id="second-list" class="footer-content">
+          <ul>
+            <li class="highlight">Program</li>
+            <li><a href="">Sustain</a></li>
+          </ul>
+        </div>
+        <div id="footer-form" class="footer-content">
           <p>Get the LifeBox newsletter to receive updates</p>
           <div id="input">
             <input type="text" placeholder="Enter Your Email">
             <label for="email"><button class="btn btn-sm btn-light">Subscribe</button></label>
-          </div>
-          <div id="social-md">
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-twitter-square"></i></a>
-            <a href="#"><i class="fab fa-instagram-square"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <div id="social-md">
+              <a href="#"><i class="fab fa-facebook"></i></a>
+              <a href="#"><i class="fab fa-twitter-square"></i></a>
+              <a href="#"><i class="fab fa-instagram-square"></i></a>
+              <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
           </div>
         </div>
-      </div>
-    </footer>
-    <div id="extra">
+      </footer>
       <hr>
-      <p>© 2019 LifeBox Labs, Inc | Privacy Policy</p>
+      <p class="inc">© 2019 LifeBox Labs, Inc | Privacy Policy</p>
     </div>
+
   </div>
 
-  <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
-  <script src="home.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="about.js"></script>
 </body>
 
 </html>
