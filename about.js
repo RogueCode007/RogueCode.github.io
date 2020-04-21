@@ -12,7 +12,10 @@ $("#bars").click(function(){
       "display": "block",
       "padding": "0"
     });
-    $("body").css("backgroundColor", "#eaf6fc");
+    $("body").css({
+      backgroundColor: "#eaf6fc",
+      height: "100%",
+    });
     $("nav div").css({
       "display": "block",
     })
