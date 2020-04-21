@@ -369,7 +369,7 @@ hr {
 }
 @media screen and (max-width: 380px) {
   #container {
-    grid-template-rows: 250px 1220px 500px;
+    grid-template-rows: 290px 1220px 500px;
   }
   #challenge-box {
     font-size: 0.9em;
