@@ -3,7 +3,7 @@ body {
   padding: 0;
   color: #003459;
   font-family: 'Raleway', sans-serif;
-  
+
 }
 
 nav {
@@ -26,6 +26,11 @@ nav ul {
 nav ul li {
   display: inline;
   padding: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #003459;
 }
 
 #toggle-btn {
@@ -85,7 +90,8 @@ nav ul li {
 }
 
 h3 {
-  margin-top: 30px;
+  margin-top: 50px;
+  font-weight: 700;
 }
 
 #figures {
@@ -112,6 +118,7 @@ figcaption :nth-child(1) {
 
 h4 {
   margin-top: 70px;
+  font-weight: 700;
 }
 
 #box-2 :nth-child(5) {
@@ -131,7 +138,7 @@ footer {
   width: 90%;
   margin: 20px auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 footer ul {
@@ -250,7 +257,8 @@ hr {
     display: block;
     font-size: 0.5em;
   }
-  #close{
+
+  #close {
     font-size: 1.5em;
   }
 
@@ -310,7 +318,7 @@ hr {
     width: 90%;
     margin: 20px auto;
     display: block;
-    height: 400px
+    height: 400px;
   }
 
   .footer-content {
@@ -326,28 +334,48 @@ hr {
     text-align: left;
   }
 
+  #input input {
+    width: 60%;
+  }
+
+  #input label {
+    width: 25% !important;
+  }
+
+  #input label button {
+    width: 100%;
+    text-align: left;
+  }
+
 }
-@media screen and (max-width: 560px){
+
+@media screen and (max-width: 560px) {
   #container {
     grid-template-rows: 670px 780px 500px;
   }
 
 }
+
 @media screen and (max-width:430px) {
   #container {
-    grid-template-rows: 500px 780px 500px;
+    grid-template-rows: 610px 780px 500px;
+  }
+
+  #box-1 div {
+    width: 95%;
   }
 
   h1 {
-    font-size: 1.3em;
+    font-size: 1.8em;
     font-weight: 700
   }
 
   #box-1 div p {
-    font-size: 1em;
+    font-size: 1.1em;
   }
 
   #box-1 div :nth-child(2) {
+    margin-top: 40px;
     margin-bottom: 15px;
   }
 
@@ -356,11 +384,11 @@ hr {
   }
 
   h3 {
-    font-size: 1.2em
+    font-size: 1.3em
   }
 
   #box-2 p {
-    font-size: 1em;
+    font-size: 1.1em;
   }
 
   #figures {
@@ -370,10 +398,11 @@ hr {
 
   #box-2 :nth-child(5) {
     font-size: 1em;
+    line-height: 1.2em;
   }
 
   .footer-content ul li a {
-    font-size: 0.6em;
+    font-size: 0.75em;
   }
 
   .highlight {
@@ -387,5 +416,42 @@ hr {
   #footer-form p {
     font-size: 0.8em;
   }
+  #input label button{
+    font-size: 0.7em !important;
+  }
 
+}
+
+@media screen and (max-width:400px) {
+  #container {
+    grid-template-rows: 580px 780px 500px;
+  }
+
+  h1{
+    font-size: 1.8em;
+  }
+  #box-1 div p {
+    font-size: 1em;
+  }
+  h3 {
+    font-size: 1.3em
+  }
+  #box-2 p {
+    font-size: 1em;
+  }
+  #box-2 :nth-child(5) {
+    font-size: 1em;
+  }
+  .footer-content ul li a {
+    font-size: 0.8em;
+  }
+  .highlight {
+    font-size: 1em;
+  }
+  #footer-form p {
+    font-size: 0.8em;
+  }
+  #input label button{
+    font-size: 0.7em !important;
+  }
 }
