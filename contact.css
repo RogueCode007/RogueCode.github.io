@@ -270,9 +270,9 @@ footer ul li {
 
 #social-md {
   width: 50%;
-  margin-left: 10%;
+  margin-left: 0;
   text-align: left;
-  padding: 10px;
+  padding: 10px auto auto 0;
 }
 
 #social-md a {
@@ -425,7 +425,7 @@ hr {
 
 @media screen and (max-width: 415px) {
   #container {
-    grid-template-rows: 270px 1420px 500px;
+    grid-template-rows: 270px 1420px 450px;
   }
 
   h1 {
@@ -438,6 +438,9 @@ hr {
 
   #box-1 div p {
     font-size: 1em;
+  }
+  textarea{
+    height: 150px
   }
 
   h5 {
@@ -460,11 +463,15 @@ hr {
     margin-top: 15px
   }
   footer{
-    height: 400px;
+    height: 380px;
+    margin-bottom: 0
   }
   footer ul li{
     padding: 5px;
   }
-  
+  #footer-form {
+    margin: 5px 3px 5px 5px;
+    padding-left: 5px
+  }
   
 }
