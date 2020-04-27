@@ -53,7 +53,7 @@ nav ul li a {
 #container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: 550px 700px 300px;
+  grid-template-rows: 550px 700px 320px;
   grid-template-areas:
     "main main main main main main main main main main main main"
     "team team team team team team team team team team team team"
@@ -138,17 +138,19 @@ footer {
   width: 90%;
   margin: 20px auto;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 footer ul {
   list-style-type: none;
   padding: 0;
+  margin-top: 0;
+  text-align: left;
 }
 
 footer ul li {
-  padding: 5px;
-
+  padding: 10px;
+  font-size: 1em;
 }
 
 .footer-content ul li a {
@@ -158,11 +160,23 @@ footer ul li {
 
 .highlight {
   font-size: 1.3em;
-  font-weight: 500;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+}
+
+#footer-form {
+  text-align: left;
 }
 
 #input {
   padding: 0;
+  text-align: left;
+}
+
+.footer-email {
+  height: 40px;
+  border-radius: 5px;
 }
 
 #social-md {
@@ -189,18 +203,21 @@ hr {
 }
 
 #box-3 p {
-  margin-top: 10px;
+  color: white;
+  margin-top: 5px;
 }
 
 .inc {
-  font-size: 0.8em
+  font-size: 0.8em;
+  color: white;
+  margin-bottom: 5px;
 }
 
 /*=============== FIRST MEDIA QUERY =========================*/
 
 @media screen and (max-width: 830px) {
   #container {
-    grid-template-rows: 550px 680px 300px;
+    grid-template-rows: 550px 680px 320px;
   }
 
 
@@ -220,7 +237,7 @@ hr {
 
 @media screen and (max-width: 815px) {
   #container {
-    grid-template-rows: 630px 650px 300px;
+    grid-template-rows: 630px 650px 320px;
   }
 
   #box-1 div {
@@ -234,15 +251,10 @@ hr {
   }
 }
 
-/*@media screen and (max-width: 800px) {
-  #container {
-    grid-template-rows: 600px 650px 300px;
-  }
-}
-*/
+
 @media screen and (max-width: 700px) {
   #container {
-    grid-template-rows: 680px 970px 300px;
+    grid-template-rows: 680px 970px 320px;
   }
 
   nav ul {
@@ -290,7 +302,7 @@ hr {
 
 @media screen and (max-width: 650px) {
   #container {
-    grid-template-rows: 600px 900px 500px;
+    grid-template-rows: 600px 1000px 470px;
   }
 
   h1 {
@@ -306,12 +318,12 @@ hr {
   }
 
   #figures {
-    margin: 50px auto 0 auto;
+    margin: 50px auto 80px auto;
     height: 470px;
   }
 
   h4 {
-    margin-top: 0;
+    margin-top: 20px;
   }
 
   footer {
@@ -327,10 +339,11 @@ hr {
     float: left;
   }
 
+
   #footer-form {
     width: 90%;
-    margin: 5px 5%;
-    padding: 10px;
+    margin: 5px 3px 5px 7px;
+    padding: 15px;
     text-align: left;
   }
 
@@ -339,26 +352,36 @@ hr {
   }
 
   #input label {
-    width: 25% !important;
+    width: auto !important;
   }
 
   #input label button {
-    width: 100%;
+    width: auto;
     text-align: left;
+  }
+
+  .footer-email {
+    height: 40px;
+    border-radius: 5px;
+  }
+
+  #social-md {
+    margin-left: 0;
+    padding-left: 0
   }
 
 }
 
 @media screen and (max-width: 560px) {
   #container {
-    grid-template-rows: 670px 780px 500px;
+    grid-template-rows: 670px 1000px 500px;
   }
 
 }
 
 @media screen and (max-width:430px) {
   #container {
-    grid-template-rows: 610px 780px 500px;
+    grid-template-rows: 610px 810px 500px;
   }
 
   #box-1 div {
@@ -410,48 +433,40 @@ hr {
   }
 
   footer {
-    margin: 20px auto 0 auto;
+    height: 400px;
   }
 
-  #footer-form p {
-    font-size: 0.8em;
+  footer ul li {
+    padding: 5px;
   }
-  #input label button{
-    font-size: 0.7em !important;
-  }
-
 }
 
 @media screen and (max-width:400px) {
   #container {
-    grid-template-rows: 580px 780px 500px;
+    grid-template-rows: 580px 800px 500px;
   }
 
-  h1{
+  h1 {
     font-size: 1.8em;
   }
+
   #box-1 div p {
     font-size: 1em;
   }
+
   h3 {
     font-size: 1.3em
   }
+
   #box-2 p {
     font-size: 1em;
   }
+
   #box-2 :nth-child(5) {
     font-size: 1em;
   }
-  .footer-content ul li a {
-    font-size: 0.8em;
-  }
+
   .highlight {
     font-size: 1em;
-  }
-  #footer-form p {
-    font-size: 0.8em;
-  }
-  #input label button{
-    font-size: 0.7em !important;
   }
 }
