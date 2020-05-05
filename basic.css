@@ -31,7 +31,7 @@ body {
 }
 #box-2 {
   grid-area: c;
-  width: 80%;
+  width: 70%;
   margin: 50px auto 80px auto;
   background: #f8f8f8;
 }
