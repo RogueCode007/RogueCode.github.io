@@ -160,6 +160,7 @@ footer ul li {
   width: 50%;
   text-align: left;
   padding: 10px;
+  padding-left: 0
 }
 
 #social-md a {
@@ -277,7 +278,7 @@ hr {
 
   #footer-form {
     width: 90%;
-    margin: 5px 5%;
+    margin: 5px 5% 5px 0;
     padding: 10px;
     text-align: left;
   }
@@ -334,6 +335,7 @@ hr {
   }
   h1 {
     font-size: 1.9em;
+    margin-left: 20px;
   }
 
   #challenge-box {
@@ -371,6 +373,7 @@ hr {
   #container {
     grid-template-rows: 290px 1220px 450px;
   }
+  
   #challenge-box {
     font-size: 0.9em;
   }
