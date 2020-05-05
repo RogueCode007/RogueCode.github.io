@@ -27,7 +27,8 @@ body {
   grid-area: h;
 }
 #box-1 img{
-  padding-top: 10px
+  padding-top: 10px;
+  margin-left: 50px;
 }
 #box-2 {
   grid-area: c;
