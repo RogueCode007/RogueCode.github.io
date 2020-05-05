@@ -12,6 +12,7 @@ body {
 
 }
 
+
 #container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -25,7 +26,9 @@ body {
 #box-1 {
   grid-area: h;
 }
-
+#box-1 img{
+  padding-top: 10px
+}
 #box-2 {
   grid-area: c;
   width: 80%;
@@ -157,6 +160,7 @@ option {
   font-weight: 700;
   margin-top: 30px;
   color: #1da1f2;
+  font-size: 1.2em
 }
 
 #box-3 div {
@@ -217,12 +221,12 @@ option {
 @media screen and (max-width: 415px) {
   #container {
     grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: 60px 1020px 120px;
+    grid-template-rows: 70px 1020px 120px;
 
   }
 
   #box-1 img {
-    width: 120px
+    width: 140px
   }
 
   h1 {
@@ -300,7 +304,7 @@ option {
   }
 
   #support {
-    font-size: 0.9em;
+    font-size: 1.01em;
     margin-bottom: 0
   }
 
@@ -322,7 +326,7 @@ option {
 
 @media screen and (max-width: 375px) {
   #container {
-    grid-template-rows: 60px 1030px 120px;
+    grid-template-rows: 70px 1030px 120px;
   }
 
   h1 {
