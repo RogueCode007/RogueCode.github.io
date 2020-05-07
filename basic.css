@@ -227,7 +227,8 @@ option {
   }
 
   #box-1 img {
-    width: 140px
+    width: 140px;
+    margin-left: 20px;
   }
 
   h1 {
