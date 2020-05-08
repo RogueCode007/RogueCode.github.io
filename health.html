@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>health info</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="health.css" />
+</head>
+
+<body>
+  <div id="container">
+    <div id="box-1">
+      <img src="/images/sustain 4.jpg" alt="sustain-logo" />
+      <hr />
+    </div>
+    <div id="box-2">
+      <h1>Health Information</h1>
+      <hr />
+      <form action="" method="POST">
+        <div id="gender-box">
+          <p>Gender</p>
+          <select name="gender">
+            <option>Select</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+          </select>
+        </div>
+        <div id="height-box">
+          <p>Height</p>
+          <div>
+            <select name="heightInFt" id="feet">
+              <option>Feet</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+            </select>
+            <select name="inches" id="inches">
+              <option>inches</option>
+              <option value="1">1</option>
+              <option value="3">3</option>
+              <option value="5">5</option>
+              <option value="7">7</option>
+              <option value="9">9</option>
+              <option value="11">11</option>
+            </select>
+          </div>
+        </div>
+        <div id="weight-box">
+          <p>Weight <span>kg</span></p>
+          <input type="number" name="weight" pattern="[0-9]*" inputmode="numeric" required />
+        </div>
+        <div id="check-box">
+          <p>
+            Which of the following have you been diagnosed with?
+            <span>select all that apply</span>
+          </p>
+          <div>
+            <input type="checkbox" name="prediabetes" id="prediabetes" />
+            <label for="prediabetes">Prediabetes</label>
+          </div>
+          <div>
+            <input type="checkbox" name="type2 diabetes" id="type2 diabetes" />
+            <label for="type2 diabetes">Type 2 diabetes</label>
+          </div>
+          <div>
+            <input type="checkbox" name="gestational diabetes" id="gestational diabetes" />
+            <label for="getational diabetes">Gestational diabetes</label>
+          </div>
+          <div>
+            <input type="checkbox" name="high blood pressure" id="high blood pressure" />
+            <label for="high blood pressure">High blood pressure</label>
+          </div>
+        </div>
+        <div id="risk-box">
+          <p>Do either of your parents or siblings have type 2 diabetes?</p>
+          <div>
+            <input type="radio" name="family-risk" value="yes" id="yes-1" />
+            <label for="yes-1">Yes</label>
+          </div>
+          <div>
+            <input type="radio" name="family-risk" value="no" id="no-1" />
+            <label for="no-1">No</label>
+          </div>
+        </div>
+        <div id="treatment-box">
+          <p>Are you taking any medication for your condition(s)?</p>
+          <div>
+            <input type="radio" name="Medication" value="yes" id="yes-2" />
+            <label for="yes-2">Yes</label>
+          </div>
+          <div>
+            <input type="radio" name="Medication" value="no" id="no-2" />
+            <label for="no-2">No</label>
+          </div>
+        </div>
+        <div id="smoke-box">
+          <p>
+            Are you a current or former habitual user of cigarettes, cigars or
+            other tobacco products?
+          </p>
+          <div>
+            <input type="radio" name="smoker" value="yes" id="yes-3" />
+            <label for="yes-3">Yes</label>
+          </div>
+          <div>
+            <input type="radio" name="smoker" value="no" id="no-3" />
+            <label for="no-3">No</label>
+          </div>
+        </div>
+        <div id="sustain-box">
+          <p for="">How did you hear about Sustain?</p>
+          <input type="text" />
+        </div>
+        <hr />
+        <div id="agreement-box">
+          <input type="checkbox" name="agreement" id="agree" />
+          <label for="agree">By continuing i accept Sustain's
+            <span><a href="#">Terms of Service</a> &
+              <a href="#"> Privacy Policy</a></span></label>
+        </div>
+        <div id="btn">
+          <button id="submit-btn">Submit</button>
+        </div>
+      </form>
+    </div>
+    <div id="box-3">
+      <hr />
+      <p id="support">Questions? Email: support@lifebox.ng</p>
+      <div>
+        <p><a href="#">Privacy Policy</a></p>
+        <p><a href="#">Terms of service</a></p>
+      </div>
+      <p id="copyright">© 2019 LifeBox Labs</p>
+    </div>
+  </div>
+
+
+
+  <script src="health.js"></script>
+</body>
+
+</html>
