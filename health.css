@@ -262,6 +262,7 @@ input[type="radio"]{
   #box-2{
     width: 100%;
     background: white;
+    margin-top: 30px
   }
   h1 {
     font-size: 1.9em;
@@ -325,7 +326,7 @@ input[type="radio"]{
 }
 @media screen and (max-width: 375px) {
   #container {
-    grid-template-rows: 80px 1370px 120px;
+    grid-template-rows: 80px 1390px 120px;
   }
 
   h1 {
