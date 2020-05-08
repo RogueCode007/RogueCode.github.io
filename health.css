@@ -256,6 +256,7 @@ input[type="radio"]{
     grid-template-rows: 80px 1370px 120px;
   }
   #box-1 img{
+    width: 120px;
     margin-left: 5px;
   }
   #box-2{
