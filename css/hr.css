@@ -1,0 +1,101 @@
+body {
+  font-family: "Raleway", sans-serif;
+  color: #003459;
+  width: 100%;
+  background-color: #EAE8E8;
+  margin: 0;
+}
+
+header {
+  background-color: #003459;
+  text-align: center;
+  width: 100%;
+}
+#logo{
+  margin: 15px auto
+}
+#container{
+  text-align: center;
+  width: 70%;
+  min-width: 300px;
+  margin: 40px auto;
+  background-color: white;
+  padding: 60px 40px
+}
+#bar {
+  margin: 50px auto 20px auto;
+}
+h3{
+  color: black;
+  font-weight: 400;
+}
+#red{
+  color: red;
+}
+.bold{
+  font-weight: 700
+}
+p{
+  width: 75%;
+  margin: 10px auto 50px auto;
+  line-height: 1.5em;
+}
+#btn-link{
+  background-color: #1DA1F2;
+  padding: 10px 15px;
+  color: white;
+  margin: 20px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+footer p{
+  margin: 50px auto 10px auto
+}
+footer i{
+  font-size: 25px;
+  color: #4F4F4F;
+  margin: 0 5px
+}
+
+
+@media screen and (max-width: 415px){
+  #container{
+    width: 90%;
+    padding: 10px;
+    height: 700px 
+  }
+  #bar{
+    width:350px
+  }
+  #logo{
+    width: 200px
+  }
+  h3{
+    font-size: 1.5em
+  }
+  p{
+    line-height: 1.2em;
+    width: 85%;
+    font-size: 1.2em
+  }
+  #btn-link{
+    font-size: 0.8em
+  }
+  footer p{
+    font-size: 1em;
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 375px){
+  #bar{
+    width:300px
+  }
+  p{
+    width: 95%;
+  }
+  footer p{
+    font-size: 0.9em
+  }
+}
