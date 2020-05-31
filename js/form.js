@@ -1,7 +1,6 @@
 var currentTab = 0; // Current tab is set to be the first tab (0)
 showTab(currentTab); // Display the current tab
-var count = 0 //patient score
-
+var count = 0; //patient score
 
 function showTab(n) {
   // This function will display the specified tab of the form ...
@@ -34,10 +33,12 @@ function nextPrev(n) {
   // if you have reached the end of the form... :
   if (currentTab >= x.length) {
     //...the form gets submitted:
-    countChecker()
-    document.getElementById("nextBtn").addEventListener("click", function(){
-      renderPage()
-    });  
+    // document.getElementById("testform").submit();
+    bmiCalculator();
+    countChecker();
+    document.getElementById("nextBtn").addEventListener("click", function () {
+      renderPage();
+    });
     return false;
   }
   // Otherwise, display the correct tab:
@@ -56,10 +57,10 @@ function validateForm() {
   // A loop that checks every input field in the current tab:
   for (i = 0; i < y.length; i++) {
     //Push the checked status of each radio input into an array
-    if(y[i].type == "radio"){
+    if (y[i].type == "radio") {
       arr.push(y[i].checked);
     }
-    
+
     // If a field is empty...
     if (y[i].value == "") {
       // add an "invalid" class to the field:
@@ -94,57 +95,59 @@ function fixStepIndicator(n) {
   x[n].className += " active";
 }
 
-function countChecker(){
-  var x = document.getElementsByClassName("tab")
-  for(var i=0; i < x.length; i++){
-    var y = x[i].getElementsByTagName("input");
-    for(var j=0; j < y.length; j++){
-      if(y[j].value == "male" && y[j].checked == true){
-        count += 1
+function countChecker() {
+  var x = document.getElementsByClassName("tab");
+  var y;
+  for (var i = 0; i < x.length; i++) {
+    y = x[i].getElementsByTagName("input");
+    for (var j = 0; j < y.length; j++) {
+      y[j].value == "male" && y[j].checked == true
+        ? (count += 1)
+        : (count += 0);
+      if (y[j].value == "40-49" && y[j].checked == true) {
+        count += 1;
+      } else if (y[j].value == "50-59" && y[j].checked == true) {
+        count += 2;
+      } else if (y[j].value == "60+" && y[j].checked == true) {
+        count += 3;
       }
-      if(y[j].value == "40-49" && y[j].checked == true){
-        count += 1
-      }else if(y[j].value == "50-59" && y[j].checked == true){
-        count += 1
-      }else if (y[j].value == "60+" && y[j].checked == true){
-        count +=1
-      }
-      if(y[j].value == "little" && y[j].checked == true){
-        count += 1
-      }
-      if(y[j].name = "hbpmedicine" && y[j].value == "no" && y[j].checked == true){
-        count += 1
-      }else if(y[j].value == "yes" && y[j].checked == true){
-        count += 1
+      y[j].value == "little" && y[j].checked == true
+        ? (count += 1)
+        : (count += 0);
+      if (
+        (y[j].name =
+          "hbpmedicine" && y[j].value == "no" && y[j].checked == true)
+      ) {
+        count += 1;
+      } else if (y[j].value == "yes" && y[j].checked == true) {
+        count += 1;
       }
     }
   }
-  bmiCalculator()
-  
 }
 
-function bmiCalculator(){
+function bmiCalculator() {
   var x = document.getElementsByClassName("tab");
-  var y = x[2].getElementsByTagName("input")
-  var weight = Number(y[0].value)
-  var z = x[3].getElementsByTagName("input")
-  var height = (Number(z[0].value))/10000
-  var bmi = weight/height
-  if(29.9 > bmi > 25){
-    count += 1
-  }else if(39.9 > bmi > 30){
-    count += 2
-  }else if(bmi >= 40){
-    count += 3
+  var y = x[2].getElementsByTagName("input");
+  var weight = Number(y[0].value);
+  var z = x[3].getElementsByTagName("input");
+  var height = Number(z[0].value);
+  var newHeight = (height * height) / 10000;
+  var bmi = weight / newHeight;
+  if (25 < bmi < 29.9) {
+    count += 1;
+  } else if (30 < bmi < 39.9) {
+    count += 2;
+  } else if (bmi >= 40) {
+    count += 3;
   }
 }
 
-
 //function to choose what page to render
-function renderPage(){
-  if(count > 5){
-    location.replace("hr.html")
-  }else{
-    location.replace("lr.html")
+function renderPage() {
+  if (count > 5) {
+    location.replace("hr.html");
+  } else {
+    location.replace("lr.html");
   }
 }
