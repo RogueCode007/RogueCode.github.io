@@ -114,12 +114,13 @@ function countChecker() {
       y[j].value == "little" && y[j].checked == true
         ? (count += 1)
         : (count += 0);
-      if (
-        (y[j].name =
-          "hbpmedicine" && y[j].value == "no" && y[j].checked == true)
-      ) {
-        count += 1;
-      } else if (y[j].value == "yes" && y[j].checked == true) {
+      // if (
+      //   (y[j].name =
+      //     "hbpmedicine" && y[j].value == "no" && y[j].checked == true)
+      // ) {
+      //   count += 1;
+      // }
+      if (y[j].value == "yes" && y[j].checked == true) {
         count += 1;
       }
     }
