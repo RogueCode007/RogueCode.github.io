@@ -1,7 +1,14 @@
 var currentTab = 0; // Current tab is set to be the first tab (0)
 showTab(currentTab); // Display the current tab
 var count = 0; //patient score
-
+//event listener for the submit button
+document.getElementById("submitBtn").addEventListener("click", function () {
+  //calculate bmi and count
+  bmiCalculator();
+  countChecker();
+  //choose page to render
+  renderPage();
+});
 function showTab(n) {
   // This function will display the specified tab of the form ...
   var x = document.getElementsByClassName("tab");
@@ -12,8 +19,12 @@ function showTab(n) {
   } else {
     document.getElementById("prevBtn").style.display = "inline";
   }
+  if (n < x.length - 1) {
+    document.getElementById("submitBtn").style.display = "none";
+  }
   if (n == x.length - 1) {
-    document.getElementById("nextBtn").innerHTML = "Submit";
+    document.getElementById("nextBtn").style.display = "none";
+    document.getElementById("submitBtn").style.display = "inline";
   } else {
     document.getElementById("nextBtn").innerHTML = "Next";
   }
@@ -33,12 +44,7 @@ function nextPrev(n) {
   // if you have reached the end of the form... :
   if (currentTab >= x.length) {
     //...the form gets submitted:
-    // document.getElementById("testform").submit();
-    bmiCalculator();
-    countChecker();
-    document.getElementById("nextBtn").addEventListener("click", function () {
-      renderPage();
-    });
+
     return false;
   }
   // Otherwise, display the correct tab:
