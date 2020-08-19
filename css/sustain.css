@@ -1,0 +1,393 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  color: #003459;
+  font-family: "Raleway", sans-serif;
+  overflow-x: hidden
+}
+
+
+nav img {
+  margin-left: 50px
+}
+
+.box1 {
+  background-color: #eaf6fc;
+  color: #003459;
+  height: 400px;
+  text-align: center;
+  padding-top: 30px
+}
+
+.box1 div {
+  margin: 0 auto;
+  max-width: 70%;
+
+}
+
+.box1 h2 {
+  font-size: 1.6em;
+  margin: 50px;
+  font-weight: 700;
+}
+
+div.box2>h5{
+  margin: 40px auto;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.flex-1{
+  display: flex;
+  width: 800px;
+  max-width: 70%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+
+div.sustain{
+  max-width: 60%;
+  
+}
+div.sustain p{
+  font-size: 1.2em;
+}
+div.img{
+  max-width: 30%;
+}
+.flex-2{
+  display: flex;
+  max-width: 960px;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.product{
+  width: 40%
+}
+.product h5{
+  font-size: 1.2em;
+}
+.product p{
+  font-size: 1.2em;
+}
+.box3{
+  background-color: #eaf6fc;
+ 
+}
+.flex-3{
+  display: flex;
+  max-width: 960px;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+.flex-3 ul{
+  margin: 0;
+  list-style-type: none;
+  padding: 10px;
+}
+.flex-3 h5{
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+.flex-3 ul li{
+  font-size: 1.2em;
+}
+.list1 h5{
+  text-transform: uppercase;
+  /* margin-bottom: 5px */
+}
+.list1 li{
+  padding: 10px 0;
+}
+.pricing{
+  width: 40%;
+}
+.pricing li{
+  padding: 5px 0;
+  font-weight: 600;
+}
+.pricing li span{
+  font-weight: 400;
+}
+.box4{
+  height: 150px;
+  text-align: center;
+  padding: 50px;
+}
+.box4 a{
+  text-decoration: none;
+  color: white;
+  background-color: #1DA1F2;
+  padding: 10px 15px;
+  border-radius: 5px;
+  position: relative;
+  top: 20px
+}
+#box5 {
+  background-color: #003459;
+  color: white;
+  text-align: center;
+}
+
+footer {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 0;
+  text-align: left;
+}
+
+footer ul li {
+  padding: 10px;
+  font-size: 1em;
+}
+
+.footer-content ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.highlight {
+  font-size: 1.3em;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+}
+
+#footer-form {
+  text-align: left;
+}
+#footer-form p{
+  font-size: 1.2em
+}
+
+#input {
+  padding: 0;
+  text-align: left;
+ 
+}
+input{
+  line-height: 1.5em;
+  outline: none;
+  font-size: 1.2em
+}
+.btn{
+  line-height: 1.5em;
+  font-size: 0.9em;
+  padding: 5px 10px;
+  
+}
+
+.footer-email {
+  height: 40px;
+  border-radius: 5px;
+}
+
+#social-md {
+  width: 50%;
+  margin-top: 10px;
+  margin-left: 0;
+  text-align: left;
+  padding: 10px auto auto 0;
+}
+
+#social-md a {
+  color: white;
+}
+
+#social-md a i {
+  font-size: 25px;
+}
+
+hr {
+  margin: 0 auto;
+  width: 90%;
+  border-style: 1px solid;
+  border-color: white;
+
+}
+
+#box5 p {
+  color: white;
+  margin-top: 5px;
+}
+
+.inc {
+  font-size: 0.8em;
+  color: white;
+  margin-bottom: 5px;
+}
+
+
+@media screen and (max-width: 1024px){
+  .flex-2, .flex-3{
+    max-width: 800px
+  }
+  
+}
+
+@media screen and (max-width: 768px){
+  .box1{
+    height: 380px
+  }
+  .box1 h2{
+    margin: 40px;
+    font-size: 1.4em
+  }
+  div.sustain p{
+    font-size: 1.1em;
+  }
+  .flex-2, .flex-3{
+    max-width: 600px
+  }
+  .product p{
+    font-size: 1.1em;
+  }
+  .flex-3 ul li{
+    font-size: 1.1em;
+  }
+  h1{
+    font-size: 1.8em;
+  }
+  .highlight{
+    font-size: 1.2em;
+  }
+}
+@media screen and (max-width: 414px){
+  nav img{
+    margin-left: 20px;
+    width: 150px;
+    height: 40px
+  }
+  .box1{
+    height: 300px
+  }
+  .box1 div{
+    max-width: 90%;
+  }
+  .box1 h2{
+    margin: 20px;
+    font-size: 1.2em;
+  }
+  .flex-1{
+    display: block;
+    max-width: 100%;
+    margin: 0;
+  }
+  div.sustain{
+    max-width: 90%;
+    text-align: center;
+    margin: 0 auto
+  }
+  div.img{
+    max-width: 100%;
+    text-align: center;
+    margin-top: 40px
+  }
+  .flex-2{
+    display: block;
+  }
+  div.product{
+    width: 80%;
+    margin: 0 auto
+  }
+  .flex-3{
+    display: block;
+  }
+  .flex-3 ul{
+    width: 80%;
+    margin: 0 auto;
+    padding: 0
+  }
+  .pricing{
+    width: 80%;
+    margin: 0 auto;
+    
+  }
+  .pricing ul{
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  .box4{
+    padding: 30px;
+    height: 180px;
+    box-sizing: border-box;
+  }
+  h1{
+    font-size: 1.5em;
+  }
+  footer{
+    flex-wrap: wrap;
+  }
+  .highlight{
+    font-size: 1.1em;
+  }
+  #footer-form{
+    padding-left: 10px;
+  }
+  #footer-form p{
+    font-size: 1.1em;
+  }
+  input{
+    font-size: 1em;
+    
+  }
+  .btn{
+    line-height: 1.4em;
+  }
+  #social-md a{
+    margin: 3px
+  }
+  hr{
+    margin-top: 10px
+  }
+  .inc{
+    padding-bottom: 5px;
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 375px){
+  .box1 div{
+    max-width: 100%;
+  }
+  div.sustain p{
+    line-height: 1.5em;
+  }
+  div.box2>h5{
+    margin: 60px auto 10px auto
+  }
+  .int{
+    margin-top: 40px;
+  }
+  h2{
+    font-size: 1.6em;
+  }
+  .flex-2{
+    padding: 20px 0;
+  }
+  .product h5{
+    margin: 10px
+  }
+  .product p{
+    margin: 10px;
+    line-height: 1.5em;
+  }
+  .flex-3{
+    padding-top: 15px;
+    padding-bottom: 20px;
+  }
+  .box4{
+    padding: 30px 10px;
+  }
+}
